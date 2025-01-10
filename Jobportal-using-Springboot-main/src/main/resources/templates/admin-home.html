@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="s2.css">
+</head>
+<body>
+<header>
+    <h1>Seek Job</h1>
+    <a class="lg" href="/">Logout</a>
+</header>
+<div class="container">
+    <section class="row">
+        <div class="col-md-4 mb-4">
+            <h2>Manage Jobs</h2>
+            <p>Search for available jobs based on your skills and preferences. Apply to jobs that match your profile.</p>
+            <a class="btn btn-primary" href="/manage-job">Manage Job</a>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <h2>Add Questions for Practice</h2>
+            <p>Get ready for your next job interview with helpful tips, strategies, and resources.</p>
+            <a class="btn btn-primary" href="/add-question">Add Questions for Practice</a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <h2>Add Jobs</h2>
+            <p>Get ready for your next job interview with helpful tips, strategies, and resources.</p>
+            <a class="btn btn-primary" href="/add-jobs">Add Jobs</a>
+        </div>
+    </section>
+
+</div>
+<!--<div class="container">-->
+<!--    &lt;!&ndash; Link for managing jobs &ndash;&gt;-->
+<!--    <a href="/manage-job">Manage Jobs</a>-->
+<!--    &lt;!&ndash; Link for managing interview preparation &ndash;&gt;-->
+<!--    <a href="/add-question">Manage Interview Preparation</a>-->
+
+
+
+<!--        <a class="btn btn-primary" th:href="@{/add-jobs}">Add Jobs</a>-->
+
+</div>
+</body>
+</html>

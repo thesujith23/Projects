@@ -1,0 +1,75 @@
+/* Style for header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+header {
+    background-color: #051c33; /* Blue background color */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add padding */
+}
+
+header h1 {
+    margin: 0; /* Remove margin */
+    font-size: 36px; /* Larger font size */
+}
+
+/* Container styles */
+.container {
+    margin: 0 auto; /* Center the container */
+    max-width: 800px; /* Set max width */
+    padding: 20px; /* Add padding */
+}
+
+/* Job card styles */
+.job-card {
+    border: 1px solid #ddd; /* Add border */
+    padding: 15px; /* Add padding */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.job-card h3 {
+    margin-top: 0; /* Remove top margin for heading */
+}
+
+/* Success message */
+.success-message {
+    color: green; /* Green text color */
+    text-align: center; /* Center align text */
+}
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0e0e0e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #b1babc;
+    color: black;
+}
+.lg {
+    top:30px;
+    position: absolute;
+    /*top: 50%;*/
+    right: 20px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background-color: #191b19;
+    font-size: 20px;
+    font-weight: 50;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+.lg:hover{
+    background-color: #9fc3ea;
+}

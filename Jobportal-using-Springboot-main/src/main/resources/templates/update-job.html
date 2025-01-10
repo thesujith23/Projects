@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Job</title>
+<!--    <link rel="stylesheet" href="s7.css">-->
+    <style>
+        /* Reset default browser styles */
+        body, h1, h2, h3, p, ul, form, button {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #051c33; /* Blue background color */
+            color: white; /* White text color */
+            text-align: center; /* Center align text */
+            padding: 20px 0; /* Add padding */
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0c0c0c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #b1babc;
+            color: black;
+        }
+
+        /* Style checkboxes */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"] + label {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px 0;
+            background-color: #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:checked + label {
+            background-color: #7fa4cd;
+            color: #fff;
+        }
+
+        /* Logout button */
+        .lg {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #191b19;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .lg:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Seek Job</h1>
+    <a class="lg" href="/manage-job">Back</a>
+</header>
+<div class="container">
+    <!-- Update job form -->
+    <form action="#" th:action="@{/save-updated-job}" method="post">
+        <input type="hidden" name="id" th:value="${job.id}">
+
+
+        <label for="title">Job Title:</label>
+        <input type="text" id="title" name="title" th:value="${job.title}" required>
+        <br>
+
+        <label for="description">Job Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50" th:text="${job.description}" required></textarea>
+        <br>
+
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" th:value="${job.location}" required>
+        <br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary" th:value="${job.salary}" required>
+        <br>
+
+        <label for="type">Job Type:</label>
+        <select id="type" name="type" th:value="${job.type}">
+            <option value="fulltime" th:selected="${job.type == 'fulltime'}">Full-time</option>
+            <option value="parttime" th:selected="${job.type == 'parttime'}">Part-time</option>
+            <option value="contract" th:selected="${job.type == 'contract'}">Contract</option>
+            <option value="internship" th:selected="${job.type == 'internship'}">Internship</option>
+        </select>
+        <br>
+
+        <button type="submit">Update</button>
+    </form>
+</div>
+</body>
+</html>

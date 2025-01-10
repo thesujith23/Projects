@@ -1,0 +1,40 @@
+img{
+    width:650px;
+    height:400px;
+    
+}
+/* .imgg{
+    overflow: hidden;
+    cursor: pointer;
+} */
+/* .img-group{
+    display: flex;
+    justify-content: space-between;
+} */
+.post-img{
+    overflow: hidden;
+    cursor: pointer;
+    max-width: fit-content;
+}
+.post img:hover{
+    transform: scale(1.3) rotate(-10deg);
+    opacity: 0.8;
+    transition: 0.3s ease;
+  
+}
+.dis img{
+    border-radius: 30px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    
+}
+.post-img #banner{
+    width:100%;
+    height: 10%;
+    border-radius: 50px;
+}
+#blogEnd img{
+    max-width:max-content;
+    border-radius: 20px;
+}

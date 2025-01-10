@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Portal - Home Page</title>
+    <link rel="stylesheet" href="s4.css">
+</head>
+<body>
+<header>
+    <h1>Seek Job</h1>
+    <a class="lg" href="/admin-home">Back</a>
+</header>
+<h2>Add New Job</h2>
+<form action="#" th:action="@{/save-job}" method="post">
+    <label for="title">Job Title:</label>
+    <input type="text" id="title" name="title" required>
+    <br>
+    <label for="description">Job Description:</label>
+    <textarea id="description" name="description" rows="4" cols="50"></textarea>
+    <br>
+    <label >Skills:</label>
+    <div>
+        <input type="checkbox" id="java" name="skills" value="Java">
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="c" name="skills" value="C">
+        <label for="c">C</label><br>
+        <input type="checkbox" id="cpp" name="skills" value="C++">
+        <label for="cpp">C++</label><br>
+        <input type="checkbox" id="python" name="skills" value="C++">
+        <label for="python">Python</label><br>
+        <input type="checkbox" id="ruby" name="skills" value="C++">
+        <label for="ruby">Ruby</label><br>
+        <input type="checkbox" id="Angular" name="skills" value="C++">
+        <label for="Angular">Angular</label><br>
+
+    </div>
+    <br>
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location">
+    <br>
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary">
+    <br>
+    <label for="type">Job Type:</label>
+    <select id="type" name="type">
+        <option value="fulltime">Full-time</option>
+        <option value="parttime">Part-time</option>
+        <option value="contract">Contract</option>
+        <option value="internship">Internship</option>
+    </select>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

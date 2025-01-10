@@ -1,0 +1,92 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b1babc;
+}
+
+.container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #191b19; /* Add border */
+}
+header {
+    background-color: #051c33; /* Blue background color */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add padding */
+}
+
+header h1 {
+    margin: 0; /* Remove margin */
+    font-size: 36px; /* Larger font size */
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #191b19;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #425041;
+}
+
+/* Error message styles */
+p.error {
+    color: red;
+    text-align: center;
+}
+
+/* Link styles */
+p {
+    text-align: center;
+}
+
+a {
+    color: #4d6165;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Portal - Home Page</title>
+    <link rel="stylesheet" href="s3.css">
+</head>
+<body>
+<header>
+    <h1>Seek Job</h1>
+    <a  class="lg" href="/home">Back</a>
+</header>
+<div class="container">
+    <h2>Find Jobs</h2>
+    <div th:if="${successMessage}">
+        <p th:text="${successMessage}" class="success-message"></p>
+    </div>
+    <!-- Jobs list -->
+    <div th:if="${jobs.isEmpty()}">
+        <p>No jobs found</p>
+    </div>
+    <div th:each="job : ${jobs}" class="job-card">
+        <div>
+            <h3 th:text="${job.title}"></h3>
+            <p th:text="${job.description}"></p>
+            <p th:text="'Location: ' + ${job.location}"></p>
+            <p th:text="'Type : ' + ${job.type}"></p>
+            <p th:text="'Salary: ' + ${job.salary}"></p>
+            <form th:action="@{/apply-job}" method="post">
+                <input type="hidden" name="jobId" th:value="${job.id}">
+                <button type="submit" class="btn">Apply</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

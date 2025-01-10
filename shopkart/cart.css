@@ -1,0 +1,63 @@
+section .sec{
+    margin-bottom: -8%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+thead{
+    background-color: orange;
+    font-weight: 700;
+}
+table .p1 td{
+    border: 1px solid black;
+    text-align: center;
+}
+.p1 td{
+    padding: 2%;
+}
+input{width: 45px;}
+thead td{
+    font-size: medium;
+}
+.sec1{
+    margin-bottom: -5%;
+}
+#tab2{
+    width: 300%;
+}
+#tab2 tbody .td1 input{
+    width:300px; 
+    height: 50px;   
+}
+td{
+    padding: 2%;
+}
+#tab2{
+    border: 1px solid black;
+}
+#b1{
+    margin-left: 25%;
+    background-color: orange;
+    font-weight: bold;
+    height: 50px;
+    width: 150px;
+    box-shadow: 2px 2px black;
+    transition: 0.3s ease;
+}
+
+.ss1{
+    position: relative;
+    top:0%;
+    left:240%;
+}
+#b2{
+    margin-left: 130%;
+    background-color: orange;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    box-shadow: 2px 2px black;
+    transition: 0.3s ease;
+}

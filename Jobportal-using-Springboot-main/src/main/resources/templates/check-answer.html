@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Check Answer</title>
+  <link rel="stylesheet" href="s3.css">
+</head>
+<body>
+<header>
+  <h1>Seek Job</h1>
+  <a class="lg" href="/interview-preparation">Back</a>
+</header>
+<div class="container">
+  <h2>Question</h2>
+  <p th:text="${question.questionText}"></p>
+  <h3>Options</h3>
+  <ul>
+    <li  th:text="'A) '+${question.optionA}"></li>
+    <li  th:text="'B) '+${question.optionB}"></li>
+    <li  th:text="'C) '+${question.optionC}"></li>
+    <li  th:text="'D) '+${question.optionD}"></li>
+  </ul>
+  <h3>Your Answer</h3>
+  <span th:text="${selectedOption}"></span>
+
+  <h3>Feedback</h3>
+  <span th:text="${feedback}"></span>
+</div>
+</body>
+</html>

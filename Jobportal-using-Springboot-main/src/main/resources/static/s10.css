@@ -1,0 +1,73 @@
+/* Style for header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #051c33; /* Blue background color */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add padding */
+}
+
+header h1 {
+    margin: 0; /* Remove margin */
+    font-size: 36px; /* Larger font size */
+}
+
+/* Style for back button */
+.lg {
+    top:30px;
+    position: absolute;
+    /*top: 50%;*/
+    right: 20px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background-color: #191b19;
+    font-size: 20px;
+    font-weight: 50;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+.lg:hover{
+    background-color: #9fc3ea;
+}
+
+/* Style for container */
+.container {
+    margin: 20px; /* Add margin */
+}
+
+/* Style for form labels */
+label {
+    display: block; /* Display as block */
+    margin-left: 200px
+}
+
+/* Style for text input fields */
+input[type="text"],
+select {
+    margin-left: 200px;
+    width: 600px; /* Full width */
+    padding: 8px; /* Add padding */
+    margin-bottom: 15px; /* Add margin */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Style for submit button */
+button[type="submit"] {
+    background-color: #0c0c0c; /* Blue background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer */
+    margin-left: 200px;
+}
+
+button[type="submit"]:hover {
+    background-color: #b1babc; /* Darker blue on hover */
+    color: #0c0c0c;
+}

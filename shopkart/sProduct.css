@@ -1,0 +1,31 @@
+.img1{
+    height: 80%;
+    width: 90%;
+}
+section{
+    margin-top:150px ;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.ss{
+    background-color: orange;
+    box-shadow: 2px 2px black;
+    height: 40px;
+    width: 130px;
+    font-weight: bold;
+}
+.inp1{
+    width:40px;
+    height:40px;
+    margin-right: 5%;
+    margin-top: 0%;
+}
+.sproduct select{
+    display: block;
+    padding:5px 10px;
+}
+.small-img-group .small-img-col:hover{
+    cursor: pointer;
+}

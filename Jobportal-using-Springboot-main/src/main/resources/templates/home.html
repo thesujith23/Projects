@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Seek Job </title>
+    <link rel="stylesheet" href="s2.css">
+</head>
+<body>
+<header>
+    <h1 class="text-center">Seek Job</h1>
+    <a  class="lg" href="/">Logout</a>
+</header>
+<div class="container">
+    <section class="row">
+        <div class="col-md-4 mb-4">
+            <h2>Find Jobs</h2>
+            <p>Search for available jobs based on your skills and preferences. Apply to jobs that match your profile.</p>
+            <a class="btn btn-primary" th:href="@{/find-jobs}">Find Jobs</a>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <h2>Prepare for Interviews</h2>
+            <p>Get ready for your next job interview with helpful tips, strategies, and resources.</p>
+            <a class="btn btn-primary" href="/interview-preparation">Explore Interview Prep</a>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>

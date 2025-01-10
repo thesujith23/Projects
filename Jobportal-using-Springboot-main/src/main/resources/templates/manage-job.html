@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Jobs</title>
+  <link rel="stylesheet" href="s6.css">
+</head>
+<body>
+<header>
+  <h1>Seek Job</h1>
+  <a class="lg" href="/admin-home">Back</a>
+</header>
+<div class="container">
+  <table class="job-table">
+    <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Location</th>
+      <th>Salary</th>
+      <th>Type</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Iterate over the list of jobs and display their details -->
+    <tr th:each="job : ${jobs}" class="job-row">
+      <td th:text="${job.title}"></td>
+      <td th:text="${job.description}"></td>
+      <td th:text="${job.location}"></td>
+      <td th:text="${job.salary}"></td>
+      <td th:text="${job.type}"></td>
+      <td>
+        <!-- Add delete option -->
+        <a th:href="@{'/delete-job/' + ${job.id}}" class="delete-btn">Delete</a>
+        <!-- Add update option -->
+        <a th:href="@{'/update-job/' + ${job.id}}" class="update-btn">Update</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

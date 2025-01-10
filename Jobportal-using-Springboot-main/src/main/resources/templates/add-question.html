@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Interview Preparation Question</title>
+    <link rel="stylesheet" href="s10.css">
+</head>
+<body>
+<header>
+    <h1>Seek Job</h1>
+    <a class="lg" href="/admin-home">Back</a>
+</header>
+<div class="container">
+    <form action="#" th:action="@{/save-question}" method="post">
+        <label for="questionText">Question:</label>
+        <input type="text" id="questionText" name="questionText" required>
+        <br>
+        <label for="optionA">Option A:</label>
+        <input type="text" id="optionA" name="optionA" required>
+        <br>
+        <label for="optionB">Option B:</label>
+        <input type="text" id="optionB" name="optionB" required>
+        <br>
+        <label for="optionC">Option C:</label>
+        <input type="text" id="optionC" name="optionC" required>
+        <br>
+        <label for="optionD">Option D:</label>
+        <input type="text" id="optionD" name="optionD" required>
+        <br>
+        <label for="correctOption">Correct Option:</label>
+        <select id="correctOption" name="correctOption" required>
+            <option value="A">Option A</option>
+            <option value="B">Option B</option>
+            <option value="C">Option C</option>
+            <option value="D">Option D</option>
+        </select>
+        <br>
+        <button type="submit">Add Question</button>
+    </form>
+</div>
+</body>
+</html>

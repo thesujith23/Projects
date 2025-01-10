@@ -1,0 +1,89 @@
+/* Style for header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+header {
+    background-color: #051c33; /* Blue background color */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add padding */
+}
+
+header h1 {
+    margin: 0; /* Remove margin */
+    font-size: 36px; /* Larger font size */
+}
+
+/* Style for buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0e0e0e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #b1babc;
+    color: black;
+}
+
+/* Additional styles for Bootstrap grid */
+.container {
+    margin-top: 100px;
+    margin-left: 250px;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border: 10px solid #323332;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+}
+p{
+    justify-content: center;
+}
+.lg {
+    top:30px;
+    position: absolute;
+    /*top: 50%;*/
+    right: 20px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background-color: #191b19;
+    font-size: 20px;
+    font-weight: 50;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+.lg:hover{
+    background-color: #9fc3ea;
+}
+

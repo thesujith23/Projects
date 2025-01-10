@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Interview Preparation</title>
+  <link rel="stylesheet" href="s8.css">
+</head>
+<body>
+<header>
+  <h1>Seek Job</h1>
+  <a class="lg" href="/home">Back</a>
+</header>
+  <div class="container">
+    <h2>MCQ Questions</h2>
+    <div th:each="question : ${questions}" class="question">
+      <div class="opt">
+        <p th:text="${question.questionText}"></p>
+        <form th:action="@{/check-answer}" method="post">
+          <input type="hidden" name="questionId" th:value="${question.id}">
+          <input type="radio" name="selectedOption" value="A"> <span th:text="${question.optionA}"></span><br>
+          <input type="radio" name="selectedOption" value="B"> <span th:text="${question.optionB}"></span><br>
+          <input type="radio" name="selectedOption" value="C"> <span th:text="${question.optionC}"></span><br>
+          <input type="radio" name="selectedOption" value="D"> <span th:text="${question.optionD}"></span><br>
+          <button type="submit">Submit Answer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

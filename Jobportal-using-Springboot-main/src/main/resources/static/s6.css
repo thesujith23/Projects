@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for header */
+header {
+    background-color: #051c33; /* Blue background color */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add padding */
+}
+
+header h1 {
+    margin: 0; /* Remove margin */
+    font-size: 36px; /* Larger font size */
+}
+
+/* Style for logout button */
+.lg {
+    top:30px;
+    position: absolute;
+    /*top: 50%;*/
+    right: 20px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background-color: #191b19;
+    font-size: 20px;
+    font-weight: 50;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+.lg:hover{
+    background-color: #9fc3ea;
+}
+
+/* Style for container */
+.container {
+    margin: 20px; /* Add margin */
+}
+
+/* Style for job table */
+.job-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse border */
+}
+
+/* Style for table headers */
+.job-table th {
+    background-color: #051c33; /* Blue background color */
+    color: white; /* White text color */
+    padding: 10px; /* Add padding */
+}
+
+/* Style for table cells */
+.job-table td {
+    border: 1px solid #ddd; /* Add border */
+    padding: 10px; /* Add padding */
+}
+
+/* Style for job rows */
+.job-row:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background color for even rows */
+}
+
+/* Style for delete button */
+.delete-btn {
+    color: #dc3545; /* Red color for delete button */
+    text-decoration: none; /* Remove underline */
+    margin-right: 10px; /* Add margin */
+}
+
+/* Style for update button */
+.update-btn {
+    color: #040f1b; /* Blue color for update button */
+    text-decoration: none; /* Remove underline */
+}
+.update-btn:hover{
+    color: #9fc3ea;
+    text-underline: #191b19;
+}
+.delete-btn:hover{
+    color: #9fc3ea;
+    text-underline: #191b19;
+}

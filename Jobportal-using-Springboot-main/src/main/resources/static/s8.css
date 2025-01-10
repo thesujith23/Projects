@@ -1,0 +1,97 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    margin: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+/* Style for header */
+header {
+    background-color: #051c33; /* Blue background color */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add padding */
+}
+
+header h1 {
+    margin: 0; /* Remove margin */
+    font-size: 24px; /* Larger font size */
+}
+
+.lg {
+    top:30px;
+    position: absolute;
+    /*top: 50%;*/
+    right: 20px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background-color: #191b19;
+    font-size: 20px;
+    font-weight: 50;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+.lg:hover{
+    background-color: #9fc3ea;
+}
+/* Style for quiz questions section */
+.container {
+    margin: 40px; /* Add some margin */
+    font-size: 20px;
+    border:10px solid black;
+    ;
+}
+.opt{
+    padding: 30px;
+}
+h2 {
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+
+.question {
+    margin-bottom: 20px; /* Add margin between questions */
+}
+
+.question p {
+    font-weight: bold; /* Make question text bold */
+    margin-bottom: 10px; /* Add margin below each question */
+}
+
+.question form {
+    margin-bottom: 10px; /* Add margin below each form */
+}
+
+.question input[type="radio"] {
+    margin-right: 5px; /* Add some spacing between radio buttons and their labels */
+}
+
+.question button {
+    margin-top: 20px;
+    padding: 5px 10px; /* Add padding to the submit button */
+    background-color: #0e0e0e; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 20px;
+}
+
+.question button:hover {
+    background-color: #b1babc; /* Darker blue color on hover */
+    color: black;
+}
